@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sf.lazarus.grievance_scr">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity
+            android:name=".home"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".user_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_user"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".forgot_pwd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".enter_otp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin_forgot_pwd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_grievance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".past_grievance_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin_new_grievance_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin_forwarded_grievance_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin_closed_grievance_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".reset_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin_enter_otp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin_reset_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_password"
+            android:screenOrientation="portrait" />
+        <activity android:name=".admin_changepassword"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Close_Grievance"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

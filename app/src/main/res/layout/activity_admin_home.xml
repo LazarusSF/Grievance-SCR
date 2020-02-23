@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="#3333"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Railway Grievance"
+        android:textSize="35dp"
+        android:textColor="#ee1972f9"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" New Grievance's           "
+        android:layout_gravity="center_horizontal"
+        android:onClick="click_admin_new_grievance_list"
+        app:fb_iconResource="@drawable/ic_fiber_new_black_25dp"
+        android:padding="20dp"
+        app:fb_ghost="true"
+        app:fb_textColor="#333"
+        />
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forwarded Grievance's"
+        android:layout_gravity="center_horizontal"
+        android:onClick="click_admin_forwarded_grievance_list"
+        app:fb_ghost="true"
+        app:fb_iconResource="@drawable/ic_forward_black_24dp"
+        android:padding="20dp"
+        app:fb_textColor="#333"
+        />
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Closed Grievance's      "
+        app:fb_ghost="true"
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal"
+        app:fb_iconResource="@drawable/ic_done_all_black_24dp"
+        android:onClick="click_admin_closed_grievance_list"
+        app:fb_textColor="#333"
+        />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:fb_ghost="true"
+        android:text="Change Password"
+        android:padding="20dp"
+        android:onClick="click_admin_change_pwd"
+        app:fb_textColor="#333"
+        />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click_admin_logout"
+        app:fb_defaultColor="#fcb138"
+        app:fb_radius="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Logout"
+        app:fb_textColor="#0318fd" />
+    </LinearLayout>
+
+</LinearLayout>

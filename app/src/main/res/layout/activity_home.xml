@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:paddingBottom="40dp"
+    android:orientation="vertical"
+    android:background="#3333"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Railway Grievance"
+        android:textSize="35dp"
+        android:textColor="#ee1972f9"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fb_borderColor="@color/fbutton_color_orange"
+        android:onClick="click_user_login"
+        app:fb_textSize="25dp"
+        app:fb_iconResource="@drawable/ic_account_circle_black_50dp"
+        app:fb_defaultColor="#4444"
+        app:fb_radius="20dp"
+        app:fb_iconPaddingLeft="10dp"
+        app:fb_iconPaddingTop="20dp"
+        app:fb_iconPaddingBottom="20dp"
+        android:paddingRight="10dp"
+        app:fb_text="   If you are a user \n CLICK HERE"
+        app:fb_textColor="#333">
+    </mehdi.sakout.fancybuttons.FancyButton>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:fb_borderColor="@color/fbutton_color_orange"
+        app:fb_textSize="25dp"
+        android:onClick="click_admin_login"
+        app:fb_iconResource="@drawable/ic_person_black_150dp"
+        app:fb_defaultColor="#4444"
+        app:fb_radius="20dp"
+        app:fb_iconPaddingLeft="10dp"
+        app:fb_iconPaddingTop="20dp"
+        app:fb_iconPaddingBottom="20dp"
+        android:paddingRight="10dp"
+        app:fb_textColor="#333"
+        app:fb_text="     ADMIN LOGIN">
+    </mehdi.sakout.fancybuttons.FancyButton>
+
+</LinearLayout>
+
+</LinearLayout>

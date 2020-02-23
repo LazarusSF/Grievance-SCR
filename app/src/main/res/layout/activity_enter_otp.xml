@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:background="#3333"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Railway Grievance"
+        android:textSize="35dp"
+        android:textColor="#ee1972f9"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#333"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter OTP"
+                android:textColor="#333"
+                android:inputType="numberPassword"
+                android:ems="12"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                app:fb_radius="15dp"
+                android:padding="10dp"
+                app:fb_defaultColor="#fcb138"
+                app:fb_textColor="#0318fd"
+                android:id="@+id/enter_otp_confirm_button"
+                android:onClick="click_confirm_enter_otp"
+                />
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Re-send OTP"
+                app:fb_radius="15dp"
+                android:padding="10dp"
+                app:fb_defaultColor="#fcb138"
+                app:fb_textColor="#0318fd"
+                android:layout_marginTop="20dp"
+                />
+    </LinearLayout>
+
+</LinearLayout>

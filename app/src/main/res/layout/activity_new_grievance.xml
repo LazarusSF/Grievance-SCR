@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:background="#3333">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Railway Grievance"
+        android:textSize="35dp"
+        android:id="@+id/title_in_adminlogin_view"
+        android:textColor="#ee1972f9"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/grievance_desc_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/title_in_adminlogin_view"
+            android:layout_marginTop="30dp"
+            android:text="Grievance Description:"
+            android:textColor="#333" />
+
+        <ScrollView
+            android:id="@+id/text_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grievance_desc_tv"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.5"
+            android:fillViewport="true">
+
+            <EditText
+                android:id="@+id/ng_description"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#3FFF"
+                android:gravity="start"
+                android:lines="10"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                />
+
+        </ScrollView>
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/new_grievance_submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_scroll_view"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="Submit"
+            app:fb_defaultColor="#fcb138"
+            app:fb_radius="15dp"
+            app:fb_textColor="#0318fd"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:background="#3333"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Railway Grievance"
+        android:textSize="35dp"
+        android:textColor="#ee1972f9"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Grievance            "
+        android:onClick="click_new_grievance"
+        android:padding="10dp"
+        app:fb_iconResource="@drawable/ic_fiber_new_black_25dp"
+        app:fb_radius="10dp"
+        app:fb_defaultColor="#33fcb138"
+        app:fb_textColor="#0318fd"
+        />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Old Grievance's status"
+        app:fb_iconResource="@drawable/ic_description_black_24dp"
+        android:onClick="click_past_grievance_list"
+        app:fb_radius="10dp"
+        app:fb_defaultColor="#33fcb138"
+        app:fb_textColor="#0318fd"
+        />
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="     Change Password"
+        android:id="@+id/changepwd_userhome"
+        android:onClick="click_change_pwd_user_home"
+        android:padding="10dp"
+        app:fb_radius="10dp"
+        app:fb_defaultColor="#33fcb138"
+        app:fb_textColor="#0318fd"
+        />
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=" Logout                 "
+        app:fb_iconResource="@drawable/ic_lock_outline_black_24dp"
+        android:onClick="click_logout_user_home"
+        app:fb_radius="10dp"
+        android:padding="10dp"
+        app:fb_defaultColor="#aafcb138"
+        app:fb_textColor="#0318fd"
+        />
+    </LinearLayout>
+</LinearLayout>

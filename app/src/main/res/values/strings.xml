@@ -1,0 +1,42 @@
+<!DOCTYPE resources [
+    <!ENTITY ip "http://192.168.0.3">
+    ]>
+<resources>
+    <string name="app_name">Grievance-SCR</string>
+    <string name="list1">India is my country and all indians are my brothers and sisters</string>
+    <string name="list2">America is my country and all indians are my brothers and sisters</string>
+    <string name="list3">Japan is my country and all indians are my brothers and sisters</string>
+    <string name="list4">Korea is my country and all indians are my brothers and sisters</string>
+    <string name="list5">Australia is my country and all indians are my brothers and sisters</string>
+    <string name="list6">China is my country and all indians are my brothers and sisters</string>
+    <string name="list7">Russia is my country and all indians are my brothers and sisters</string>
+    <string name="list8">Sri Lanka is my country and all indians are my brothers and sisters</string>
+    <string name="closed">closed</string>
+    <string name="pending">pending</string>
+    <string name="forwarded">forwarded</string>
+    <string name="userlogin">"&ip;/database_grievance/login.php"</string>
+    <string name="adminchangepassword">&ip;/database_grievance/adminforgotpassword.php</string>
+    <string name="adminclosedgrievancelist">&ip;/database_grievance/grievance_data/anglrequestdata.php?type=closed</string>
+    <string name="adminforgotpwd">&ip;/database_grievance/adminforgot.php</string>
+    <string name="adminforwardedgrievancelist">&ip;/database_grievance/grievance_data/anglrequestdata.php?type=forwarded</string>
+    <string name="adminlogin">&ip;/database_grievance/adminlogin.php</string>
+    <string name="adminnewgrievancelist">&ip;/database_grievance/grievance_data/anglrequestdata.php?type=pending</string>
+    <string name="adminresetpassword">&ip;/database_grievance/adminforgotpassword.php</string>
+    <string name="afgladapter">&ip;/database_grievance/grievance_data/closegrievance.php</string>
+    <string name="angladapter_toClose">&ip;/database_grievance/grievance_data/closegrievance.php</string>
+    <string name="angladapter_toForward">&ip;/database_grievance/grievance_data/forwardgrievance.php</string>
+    <string name="closegrievance_toClose">&ip;/database_grievance/grievance_data/closegrievance.php</string>
+    <string name="closgrievance_toComment">&ip;/database_grievance/comments/commentit.php</string>
+    <string name="forgotpwd">&ip;/database_grievance/forgot.php</string>
+    <string name="newgrievance">&ip;/database_grievance/grievance_data/newdata.php</string>
+    <string name="newpassword">&ip;/database_grievance/forgotpassword.php</string>
+    <string name="newuser">&ip;/database_grievance/register.php</string>
+    <string name="pastgrievancelist">&ip;/database_grievance/grievance_data/pglrequestdata.php?pfno=</string>
+    <string name="pgladapter">&ip;/database_grievance/comments/files/</string>
+    <string name="resetpassword">&ip;/database_grievance/modifypassword.php</string>
+    <string name="utils_closeGrievance">"&ip;/database_grievance/comments/upload.php"</string>
+
+
+    <!--  <<string name="ba"
+-->
+</resources>

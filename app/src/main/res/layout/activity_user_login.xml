@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#3333"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Railway Grievance"
+        android:textSize="35dp"
+        android:textColor="#ee1972f9"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_login_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="User Login"
+            android:textAlignment="center"
+            android:textColor="#555"
+            android:textSize="35dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#333"
+            android:layout_marginTop="40dp">
+
+            <EditText
+                android:id="@+id/pfno_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:hint="Enter PF/PPO No.."
+                android:inputType="numberDecimal"
+                android:textColor="#333"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#333"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/pwd_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:hint="Enter Password:"
+                android:inputType="textPassword"
+                android:textColor="#333"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/userlogin_forgot_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="15dp"
+                app:fb_radius="5dp"
+                app:fb_ghost="true"
+                android:text="Forgot Password ?"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                app:fb_textColor="#333"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/login_userlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="30dp"
+                android:text=" Login "
+                android:padding="15dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                app:fb_radius="10dp"
+                app:fb_defaultColor="#fcb138"
+                app:fb_textColor="#0318fd"
+                />
+        </RelativeLayout>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+
+            android:id="@+id/register_userlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userlogin_pwd_textview"
+            android:layout_marginTop="20dp"
+            android:text="New User? \nSign Up "
+            android:padding="15dp"
+            app:fb_ghost="true"
+            android:textAllCaps="false"
+            android:background="#3333"
+            app:fb_textColor="#333"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
